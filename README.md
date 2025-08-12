@@ -1,3 +1,4 @@
+
 # SG Money Buddy 🇸🇬💰
 
 A Telegram bot designed specifically for Singaporeans to manage daily expenses and combat the cost of living crisis.
