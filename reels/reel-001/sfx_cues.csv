@@ -1,0 +1,15 @@
+time_s,frame,layer,cue,editor_direction,priority,license_status
+0.00,0,Designed SFX,Hard tactile bright slice,"Sync exactly to visible line entry; clean transient and short tail",high,source_or_create
+0.10,3,Music,Low pulse motif,"Enter after hit rather than competing with transient",medium,source_or_create
+1.20,36,Foley,Glass-metal close pass,"Short low-pitched material sound matched to first edit",medium,source_or_create
+2.05,62,Designed SFX,Directionally matched movement pass,"Spatial cue moves with object on next cut",medium,source_or_create
+3.60,108,Music,Micro-drop,"Briefly remove rhythmic body to create anticipation",high,source_or_create
+4.05,122,Foley,Single dry interface click,"Avoid stereotypical video game blip",high,source_or_create
+5.20,156,Ambience,Deeper studio-room tone,"Establish depth during exploded view",medium,source_or_create
+5.55,166,Foley,Five micro mechanical snaps,"Separate snaps by actual layer arrival frame",medium,source_or_create
+9.00,270,Designed SFX,Typography locks and UI taps,"Follow real text motion / key frames",medium,source_or_create
+13.20,396,Music,Rising harmonic build,"Peak when montage integrates",high,source_or_create
+15.20,456,Designed SFX,Sub impact on hero resolve,"Soft clipped-safe sub and airy top; do not drown content",high,source_or_create
+17.60,528,Music,Drop to warm sustained chord,"Allow headline comprehension",high,source_or_create
+20.80,624,Foley,Soft tactile CTA arrival,"Keep CTA inviting not aggressively salesy",low,source_or_create
+25.80,774,Ambience,Loop crossfade,"Check boundary continuity to first frame",high,source_or_create
