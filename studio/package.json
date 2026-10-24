@@ -4,13 +4,19 @@
   "private": true,
   "description": "Remotion project for the Claude Reels brand — one composition per Reel.",
   "scripts": {
-    "dev": "remotion studio src/index.ts",
-    "typecheck": "tsc --noEmit",
+    "dev": "npm run proof && npm run audio:reel-001 && remotion studio src/index.ts",
+    "typecheck": "npm run proof && tsc --noEmit",
+    "proof": "node scripts/extract-proof.mjs",
+    "audio:reel-001": "node scripts/synth-reel-001.mjs && node scripts/master-audio.mjs public/audio/reel-001-raw.wav public/audio/reel-001-mix.wav",
+    "render:reel-001": "npm run proof && npm run audio:reel-001 && remotion render src/index.ts Reel001 out/reel-001.mp4",
+    "render:reel-001-cta": "npm run proof && npm run audio:reel-001 && remotion render src/index.ts Reel001CTA out/reel-001-cta.mp4",
     "render:reel-001-animatic": "remotion render src/index.ts Reel001Animatic out/reel-001-animatic.mp4",
-    "still:reel-001": "remotion still src/index.ts Reel001Animatic out/reel-001-frame0.png --frame=0"
+    "stills": "node scripts/stills.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.538",
+    "@remotion/fonts": "4.0.538",
+    "@remotion/noise": "4.0.538",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "remotion": "4.0.538"

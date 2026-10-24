@@ -1,6 +1,20 @@
 # Reel 001 — caption and delivery
 
-## Caption
+> **Status:** post `renders/reel-001.mp4` with the *no-CTA caption* below. Keep `renders/reel-001-cta-HOLD.mp4` and
+> the DIRECTOR caption until the free starter pack exists and the Manychat test (below) has passed.
+
+## Caption — post now (no CTA)
+The difference isn't a longer prompt. It's having a director.
+
+Every shot, cut and sound in this Reel was directed and built in code with Claude Code + Remotion: story,
+shots, motion, sound, QA. The files you see are the real ones from the project.
+
+A free starter version of this workflow is coming. Follow to catch it.
+
+Original picture and sound. Not affiliated with Anthropic.
+
+## Caption — CTA version (use only with the CTA render, once the starter is live)
+
 The difference isn't a longer prompt. It's having a director.
 
 I built a video workflow around story, shot design, motion, sound and actual quality checks. This Reel is a creative demonstration of that approach—not a claim that one command makes every shot perfectly without review.

@@ -5,3 +5,5 @@ studio/.remotion/
 .DS_Store
 .env
 .env.*
+studio/public/audio/*.wav
+studio/src/reel-001/proof.generated.ts

@@ -40,12 +40,17 @@ studio/                                     Remotion project (one composition pe
 cd studio
 npm install
 npm run dev                        # Remotion Studio preview
-npm run render:reel-001-animatic   # -> studio/out/reel-001-animatic.mp4
+npm run render:reel-001            # final Reel 001, no CTA   -> studio/out/reel-001.mp4
+npm run render:reel-001-cta        # CTA variant (hold until the free starter is live)
+npm run render:reel-001-animatic   # timing-only animatic
 ```
-`Reel001Animatic` is only a timing animatic (Gate C): placeholder cards built from the
-storyboard frame ranges, with hero text kept inside Instagram's safe area. It is **not** the
-finished film. Swap in each real shot as it gets built, and keep `studio/src/reel-001/shots.ts`
-in sync with `reels/reel-001/storyboard.csv`.
+Each render first regenerates the proof excerpts from the real repo files (`scripts/extract-proof.mjs`) and the
+synthesized, mastered soundtrack (`scripts/synth-reel-001.mjs` + `scripts/master-audio.mjs`). Both are
+deterministic and gitignored. Requires FFmpeg on PATH.
 
-If Remotion can't download its own headless browser, pass one with
-`--browser-executable=/path/to/chrome-headless-shell`.
+If Remotion can't download its own headless browser, point it at one:
+`REMOTION_BROWSER_EXECUTABLE=/path/to/chrome-headless-shell npm run render:reel-001`.
+
+## Reel 001 status
+Rendered and QA'd. See `reels/reel-001/qa_report.md`. Deliverables are in `reels/reel-001/renders/`; production docs
+are `art_bible.md`, `script.md`, `edit_notes.md`, `asset_manifest.csv` and `production_breakdown.md`.

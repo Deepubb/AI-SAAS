@@ -1,0 +1,11 @@
+asset,type,path,origin,license,notes
+Hero dusk scene (sky/sun/ridges/sea/foreground/line),vector code,studio/src/reel-001/HeroScene.tsx,original — authored in Remotion/React for this Reel,project-owned,ridges generated with @remotion/noise
+Micro-shots: telephoto horizon / eclipse ring / monoliths,vector code,studio/src/reel-001/shots/Shot02Montage.tsx,original,project-owned,2D only — no 3D renders or stock footage
+Luminous line / glint / glass / grain / selection box,vector code,studio/src/reel-001/motif.tsx,original,project-owned,grain is SVG feTurbulence
+Exploded schematic + module glyphs,vector code,studio/src/reel-001/shots/Shot04Explode.tsx; studio/src/reel-001/modules.tsx,original,project-owned,CSS 3D transforms on 2D layers; labelled conceptual on screen
+Proof excerpts,text extracts,studio/src/reel-001/proof.generated.ts,generated at build time from real repo files by studio/scripts/extract-proof.mjs,project-owned,sources: SKILL.md; storyboard.csv; motif.tsx; sfx_cues.csv
+Inter Display (Medium/Bold/Black),font,studio/public/fonts/InterDisplay-*.otf,The Inter Project Authors,OFL-1.1,license: studio/public/fonts/LICENSE-Inter.txt
+JetBrains Mono (Regular/Medium),font,studio/public/fonts/JetBrainsMono-*.ttf,JetBrains s.r.o.,Apache-2.0 (per the bundled Debian copyright file; upstream now also ships under OFL-1.1),license: studio/public/fonts/LICENSE-JetBrainsMono.txt
+Score + all SFX,audio,studio/scripts/synth-reel-001.mjs -> studio/public/audio/reel-001-mix.wav,original — procedurally synthesized (oscillators + filtered noise); no samples,project-owned,deterministic: rerun npm run audio:reel-001
+Remotion 4.0.538,software,studio/package.json,Remotion AG,Remotion License,free for individuals and companies up to 3 employees; larger companies need a company license (check remotion.pro/license)
+FFmpeg,software,system,FFmpeg project,LGPL/GPL,used for mastering and QA only
